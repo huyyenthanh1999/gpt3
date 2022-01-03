@@ -1,0 +1,82 @@
+@import '../../global.scss';
+
+.gpt3__features{
+    display: flex;
+    justify-content: space-between;
+
+    @include large {
+        flex-direction: column;
+    }
+
+    .gpt3__features-heading{
+        width: 50%;
+        margin-right: 5rem;
+
+        @include large {
+            width: 100%;
+            margin-bottom: 3rem;
+            margin-right: 0;
+        }
+
+        h1 {
+            font-size: 34px;
+            line-height: 45px;
+            margin-bottom: 2rem;
+            max-width: 600px;
+
+            @include large {
+                max-width: auto;
+                margin-bottom: 1rem;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #FF8A71;
+        }
+    }
+
+    .gpt3__features-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        @include large {
+            width: 100%;
+        }
+
+        .gpt3__features-container__feature {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            padding: 0;
+
+            @include medium {
+                flex-direction: column;
+            }
+
+            h1 {
+                flex: 1;
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 200px;
+                margin-right: 4rem;
+            }
+
+            .gpt3__features-container__feature-text {
+                flex: 1;
+            }
+
+            .gpt3__features-container__feature-title {
+                position: absolute;
+                left: 0;
+                top: -8px;
+            }
+        }
+    }
+}
+
+

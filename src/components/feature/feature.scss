@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.gpt3__features-container__feature{
+    flex: 1;
+    padding: 1rem;
+
+    @include medium {
+        padding-left: 0;
+    }
+
+    .gpt3__features-container__feature-title{
+        background: var(--gradient-bar);
+        width: 38px;
+        height: 3px;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 24px;
+        line-height: 75px;
+        letter-spacing: -0.04em;
+        margin-bottom: 26px;
+
+        @include medium {
+            line-height: 40px;
+        }
+    }
+    
+    .gpt3__features-container__feature-text{
+        color: var(--color-text);
+    }
+}

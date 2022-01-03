@@ -1,0 +1,57 @@
+@import '../../global.scss';
+
+.gpt3__possibility{
+    display: flex;
+    max-width: 1440px;
+    width: 80%;
+    margin: 40px auto;
+
+    @include xl {
+        flex-direction: column;
+    }
+
+    .gpt3__possibility-image{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+    .gpt3__possibility-content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+
+        @include xl {
+            padding: 2rem 0;
+        }
+    }
+    .gpt3__possibility-content__slogan{
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #71E5FF;
+    }
+    .gpt3__possibility-content__heading{
+        font-size: 34px;
+        line-height: 45px;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+    .gpt3__possibility-content__desc{
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--color-text);
+        margin: 1rem 0;
+    }
+    .gpt3__possibility-content__sub{
+        font-size: 16px;
+        line-height: 30px;
+        color: #FF8A71;
+    }
+}

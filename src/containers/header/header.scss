@@ -1,0 +1,124 @@
+@import '../../global.scss';
+
+.gpt3__header{
+    display: flex;
+
+    @include large {
+        flex-direction: column;
+    }
+
+    .gpt3__header-content{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 800;
+            font-size: 62px;
+            line-height: 75px;
+            letter-spacing: -0.04rem;
+
+            @include medium {
+                font-size: 48px;
+            }    
+        }
+
+        h1 + p {
+            font-size: 20px;
+            line-height: 27px;
+            color: var(--color-text);
+            margin-top: 2rem;
+        }
+    
+        .gpt3__header-content__input{
+            margin: 2rem 0;
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+
+            @include small {
+                flex-direction: column;
+            }
+            
+            input {
+                padding: 1.5rem 2rem;
+                border: none;
+                outline: none;
+                background-color: var(--color-footer);
+                color: #3D6184;
+                font-size: 20px;
+                line-height: 27px;
+                border-radius: 5px 0px 0px 5px;
+                flex: 2;
+
+                @include large {
+                    padding: 1rem 1.5rem;
+                }
+
+                @include small {
+                    border-radius: 5px;
+                }
+            }
+
+            button {
+                padding: 1.5rem 2rem;
+                color: #fff;
+                font-size: 20px;
+                line-height: 27px;
+                background: #FF4820;
+                border-radius: 0px 5px 5px 0px;
+                cursor: pointer;
+                border: 0;
+                font-weight: bold;
+                flex: 1;
+                
+                &:focus {
+                    outline: none;
+                }
+
+                @include large {
+                    padding: 1rem 1.5rem;
+                }
+
+                @include small {
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .gpt3__header-content__people{
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            p{
+                color: #fff;
+                margin-left: 1rem;
+
+                @include small {
+                    margin-left: 0;
+                    margin-top: 1rem;
+                }
+            }
+
+            @include small {
+                flex-direction: column; 
+            }
+        }
+    }
+    .gpt3__header-image{
+        flex: 1;
+
+        @include large {
+            margin-top: 2rem;
+        }
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+

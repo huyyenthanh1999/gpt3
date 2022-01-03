@@ -1,0 +1,59 @@
+@import '../../global.scss';
+
+.gpt3__blog{
+
+    .gpt3__blog-heading{
+
+        h1{
+            font-size: 62px;
+            line-height: 75px;
+            font-weight: 800;
+            margin-bottom: 7rem;
+
+            @include large {
+                margin-bottom: 5rem;
+            }
+
+            @include medium {
+                font-size: 48px;
+                line-height: 65px;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    
+    .gpt3__blog-container{
+        display: flex;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        
+        @include large {
+            flex-direction: column;
+        }
+    
+        .gpt3__blog-container_groupA{
+            flex: 1;
+            
+        }
+        .gpt3__blog-container_groupB{
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+
+            @include large {
+                flex: 1;
+            }
+
+            .gpt3__article {
+                width: 50%;
+                height: 50%;
+
+                @include large {
+                    width: 100%;
+                    max-height: fit-content;
+                }
+            }
+        }
+    }
+}
+

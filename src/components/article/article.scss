@@ -1,0 +1,50 @@
+.gpt3__article{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 100%;
+    max-height: 600px;
+
+    .gpt3__article-image{
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    .gpt3__article-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        flex: 1.5;
+        background: var(--color-blog);
+        padding: 1.5rem;
+    
+        .gpt3__article-content_top{
+        
+            .gpt3__article-content__date{
+                font-size: 12px;
+                line-height: 35px;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 800;
+                color: #fff;
+            }
+        }
+        .gpt3__article-content__bottom{
+            font-size: 12px;
+            line-height: 35px;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
